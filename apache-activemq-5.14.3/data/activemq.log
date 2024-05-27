@@ -6839,3 +6839,705 @@ java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is i
 2024-05-24 16:47:09,718 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4e68f910[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
 2024-05-24 16:47:09,720 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:4660
 2024-05-24 16:47:09,720 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:4660
+2024-05-27 10:10:07,446 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory - Using class path resource [activemq.xml] from activemq.xml
+2024-05-27 10:10:07,468 [main] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:10:07 KST 2024]; root of context hierarchy
+2024-05-27 10:10:07,854 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Bean factory for org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: org.springframework.beans.factory.support.DefaultListableBeanFactory@388526fb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,logQuery,org.apache.activemq.xbean.XBeanBrokerService#0,securityLoginService,securityConstraint,adminSecurityConstraint,securityConstraintMapping,adminSecurityConstraintMapping,rewriteHandler,secHandlerCollection,securityHandler,contexts,jettyPort,Server,invokeConnectors,configureJetty,invokeStart]; root of factory hierarchy
+2024-05-27 10:10:07,911 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@784c3487]
+2024-05-27 10:10:07,912 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@681a8b4e]
+2024-05-27 10:10:08,064 [main] WARN  org.apache.activemq.broker.BrokerService - persistent="false", ignoring configured persistenceAdapter: KahaDBPersistenceAdapter[C:\Users\jimun\OneDrive\πŸ≈¡ »≠∏È\activemq\apache-activemq-5.14.3\bin\..\data\kahadb]
+2024-05-27 10:10:08,456 [main] INFO  /admin - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:10:08,470 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Initializing ActiveMQ WebConsole...
+2024-05-27 10:10:08,472 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Web console type: embedded
+2024-05-27 10:10:08,594 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole available at http://0.0.0.0:27272/
+2024-05-27 10:10:08,594 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ Jolokia REST API available at http://0.0.0.0:27272/api/jolokia/
+2024-05-27 10:10:08,594 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole initialized.
+2024-05-27 10:10:08,677 [main] INFO  /admin - Initializing Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:10:08,832 [main] INFO  /api - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:10:08,898 [main] DEBUG org.apache.activemq.web.MessageServletSupport - Defaulting to use topics: true
+2024-05-27 10:10:08,923 [main] INFO  /api - jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+2024-05-27 10:10:08,972 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle - FAILED ServerConnector@5918c260{HTTP/1.1}{0.0.0.0:27272}: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)[:]
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)[:]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)[:]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)[:]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)[:]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)[spring-core-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.config.MethodInvokingBean.invokeWithTargetException(MethodInvokingBean.java:119)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.config.MethodInvokingFactoryBean.afterPropertiesSet(MethodInvokingFactoryBean.java:106)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-4.2.jar:4.2]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-4.2.jar:4.2]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.14.3.jar:5.14.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.14.3]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.14.3]
+2024-05-27 10:10:08,974 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle - FAILED org.eclipse.jetty.server.Server@7d9ba6c: java.net.BindException: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)[:]
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)[:]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)[:]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)[:]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)[:]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)[jetty-all-9.2.13.v20150730.jar:9.2.13.v20150730]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:269)[spring-core-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.config.MethodInvokingBean.invokeWithTargetException(MethodInvokingBean.java:119)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.config.MethodInvokingFactoryBean.afterPropertiesSet(MethodInvokingFactoryBean.java:106)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-4.2.jar:4.2]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-4.2.jar:4.2]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.14.3.jar:5.14.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.14.3]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.14.3]
+2024-05-27 10:10:08,976 [main] WARN  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invokeStart' defined in class path resource [jetty.xml]: Invocation of init method failed; nested exception is java.net.BindException: Address already in use: bind
+2024-05-27 10:10:08,984 [main] INFO  /admin - Destroying Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:10:08,992 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, null) is shutting down
+2024-05-27 10:10:08,994 [main] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt stopped
+2024-05-27 10:10:09,000 [main] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@19f7222e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:10:09,000 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, null) is shutdown
+2024-05-27 10:10:09,001 [main] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:10:07 KST 2024]; root of context hierarchy
+2024-05-27 10:10:09,001 [main] WARN  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:10:07 KST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:357)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:884)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:843)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.apache.activemq.hooks.SpringContextHook.run(SpringContextHook.java:30)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService.stop(BrokerService.java:875)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerService.stop(XBeanBrokerService.java:122)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerService.destroy(XBeanBrokerService.java:115)[activemq-spring-5.14.3.jar:5.14.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:351)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:274)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:900)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:907)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:915)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:493)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-4.2.jar:4.2]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-4.2.jar:4.2]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.14.3.jar:5.14.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.14.3]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.14.3]
+2024-05-27 10:10:09,002 [main] ERROR org.apache.activemq.xbean.XBeanBrokerFactory - Failed to load: class path resource [activemq.xml], reason: Error creating bean with name 'invokeStart' defined in class path resource [jetty.xml]: Invocation of init method failed; nested exception is java.net.BindException: Address already in use: bind
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'invokeStart' defined in class path resource [jetty.xml]: Invocation of init method failed; nested exception is java.net.BindException: Address already in use: bind
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1572)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)[spring-beans-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)[spring-context-4.1.9.RELEASE.jar:4.1.9.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-4.2.jar:4.2]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-4.2.jar:4.2]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)[activemq-console-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.14.3.jar:5.14.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)[:]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)[:]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.14.3]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.14.3]
+2024-05-27 10:10:20,710 [Thread-10] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-4656-1716536824327-0:1) is shutting down
+2024-05-27 10:10:20,720 [Thread-10] DEBUG org.apache.activemq.broker.BrokerService - Caught exception, must be shutting down. This exception is ignored.
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)[:]
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)[:]
+	at org.apache.activemq.broker.BrokerService.removeShutdownHook(BrokerService.java:2508)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService.stop(BrokerService.java:809)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerService.stop(XBeanBrokerService.java:122)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.console.command.StartCommand$1.run(StartCommand.java:104)[activemq-console-5.14.3.jar:5.14.3]
+2024-05-27 10:10:20,729 [Thread-10] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt
+2024-05-27 10:10:20,734 [Thread-10] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt stopped
+2024-05-27 10:10:20,758 [Thread-10] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,destinationType=Topic,destinationName=ActiveMQ.Advisory.MasterBroker
+2024-05-27 10:10:20,759 [Thread-10] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost
+2024-05-27 10:10:20,759 [Thread-10] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,service=Health
+2024-05-27 10:10:20,759 [Thread-10] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,service=Log4JConfiguration
+2024-05-27 10:10:20,773 [Thread-10] DEBUG org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@21505815[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
+2024-05-27 10:10:20,774 [Thread-10] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@6044f944[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:10:20,774 [Thread-10] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-4656-1716536824327-0:1) uptime 2 days 17 hours
+2024-05-27 10:10:20,775 [Thread-10] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-4656-1716536824327-0:1) is shutdown
+2024-05-27 10:10:20,776 [Thread-10] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Fri May 24 16:47:02 KST 2024]; root of context hierarchy
+2024-05-27 10:10:20,814 [Thread-10] INFO  /admin - Destroying Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:10:28,646 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory - Using class path resource [activemq.xml] from activemq.xml
+2024-05-27 10:10:28,666 [main] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:10:28 KST 2024]; root of context hierarchy
+2024-05-27 10:10:28,997 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Bean factory for org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: org.springframework.beans.factory.support.DefaultListableBeanFactory@388526fb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,logQuery,org.apache.activemq.xbean.XBeanBrokerService#0,securityLoginService,securityConstraint,adminSecurityConstraint,securityConstraintMapping,adminSecurityConstraintMapping,rewriteHandler,secHandlerCollection,securityHandler,contexts,jettyPort,Server,invokeConnectors,configureJetty,invokeStart]; root of factory hierarchy
+2024-05-27 10:10:29,059 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@784c3487]
+2024-05-27 10:10:29,060 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@681a8b4e]
+2024-05-27 10:10:29,193 [main] WARN  org.apache.activemq.broker.BrokerService - persistent="false", ignoring configured persistenceAdapter: KahaDBPersistenceAdapter[C:\Users\jimun\OneDrive\πŸ≈¡ »≠∏È\activemq\apache-activemq-5.14.3\bin\..\data\kahadb]
+2024-05-27 10:10:29,551 [main] INFO  /admin - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:10:29,563 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Initializing ActiveMQ WebConsole...
+2024-05-27 10:10:29,565 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Web console type: embedded
+2024-05-27 10:10:29,647 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole available at http://0.0.0.0:27272/
+2024-05-27 10:10:29,648 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ Jolokia REST API available at http://0.0.0.0:27272/api/jolokia/
+2024-05-27 10:10:29,649 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole initialized.
+2024-05-27 10:10:29,720 [main] INFO  /admin - Initializing Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:10:29,868 [main] INFO  /api - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:10:29,930 [main] DEBUG org.apache.activemq.web.MessageServletSupport - Defaulting to use topics: true
+2024-05-27 10:10:29,953 [main] INFO  /api - jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+2024-05-27 10:10:30,030 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@741f8dbe]
+2024-05-27 10:10:30,041 [main] INFO  org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+2024-05-27 10:10:30,188 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7737-1716772230050-0:1) is starting
+2024-05-27 10:10:30,202 [main] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:10:30,203 [main] INFO  org.apache.activemq.transport.TransportServerThreadSupport - Listening for connections at: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:10:30,205 [main] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt started
+2024-05-27 10:10:30,207 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7737-1716772230050-0:1) started
+2024-05-27 10:10:30,207 [main] INFO  org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+2024-05-27 10:10:30,215 [main] DEBUG org.apache.activemq.broker.region.AbstractRegion - localhost adding destination: topic://ActiveMQ.Advisory.MasterBroker
+2024-05-27 10:10:30,217 [main] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[localhost] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@21505815[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:10:34,520 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:10:34,520 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:10:34,525 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7737-1716772230050-3:1, address: tcp://0:0:0:0:0:0:0:1:7740, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7737-1716772230050-3:1, clientId = ID:DESKTOP-6OHN4HB-7737-1716772230050-3:1, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:10:34,529 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] WARN  org.apache.activemq.broker.TransportConnection - Failed to add Connection ID:DESKTOP-6OHN4HB-7737-1716772230050-3:1 due to java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:10:34,532 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] DEBUG org.apache.activemq.broker.TransportConnection.Service - Error occured while processing sync command: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7737-1716772230050-3:1, clientId = ID:DESKTOP-6OHN4HB-7737-1716772230050-3:1, clientIp = tcp://0:0:0:0:0:0:0:1:7740, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}, exception: java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+	at org.apache.activemq.security.JaasAuthenticationBroker.authenticate(JaasAuthenticationBroker.java:89)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.security.JaasAuthenticationBroker.addConnection(JaasAuthenticationBroker.java:68)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.MutableBrokerFilter.addConnection(MutableBrokerFilter.java:103)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.processAddConnection(TransportConnection.java:852)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.jmx.ManagedTransportConnection.processAddConnection(ManagedTransportConnection.java:77)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.command.ConnectionInfo.visit(ConnectionInfo.java:139)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.service(TransportConnection.java:336)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:200)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:45)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTInactivityMonitor.onCommand(MQTTInactivityMonitor.java:162)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.sendToActiveMQ(MQTTTransportFilter.java:106)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.sendToActiveMQ(MQTTProtocolConverter.java:181)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTConnect(MQTTProtocolConverter.java:310)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTCommand(MQTTProtocolConverter.java:205)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.onCommand(MQTTTransportFilter.java:94)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.14.3.jar:5.14.3]
+	at java.base/java.lang.Thread.run(Thread.java:842)[:]
+2024-05-27 10:10:34,534 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] WARN  org.apache.activemq.broker.TransportConnection.Service - Security Error occurred on connection to: tcp://0:0:0:0:0:0:0:1:7740, User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:10:34,536 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7740@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:10:36,533 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7740
+2024-05-27 10:10:36,533 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7740
+2024-05-27 10:10:36,535 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7740@55555
+2024-05-27 10:10:36,534 [ActiveMQ BrokerService[localhost] Task-2] INFO  org.apache.activemq.broker.TransportConnection - Stopping tcp://0:0:0:0:0:0:0:1:7740 because Failed with SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:10:36,541 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5369ddd6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:10:36,542 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7740,localport=55555]
+2024-05-27 10:10:36,542 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5369ddd6[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:10:36,543 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7740
+2024-05-27 10:10:36,543 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7740
+2024-05-27 10:16:39,790 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7737-1716772230050-0:1) is shutting down
+2024-05-27 10:16:39,790 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.BrokerService - Caught exception, must be shutting down. This exception is ignored.
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)[:]
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)[:]
+	at org.apache.activemq.broker.BrokerService.removeShutdownHook(BrokerService.java:2508)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService.stop(BrokerService.java:809)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerService.stop(XBeanBrokerService.java:122)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService.containerShutdown(BrokerService.java:2531)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService$7.run(BrokerService.java:2498)[activemq-broker-5.14.3.jar:5.14.3]
+2024-05-27 10:16:39,791 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt
+2024-05-27 10:16:39,792 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt stopped
+2024-05-27 10:16:39,794 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,destinationType=Topic,destinationName=ActiveMQ.Advisory.MasterBroker
+2024-05-27 10:16:39,794 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost
+2024-05-27 10:16:39,794 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,service=Health
+2024-05-27 10:16:39,795 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,service=Log4JConfiguration
+2024-05-27 10:16:39,797 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@21505815[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
+2024-05-27 10:16:39,797 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3045cbf8[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:16:39,798 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7737-1716772230050-0:1) uptime 6 minutes
+2024-05-27 10:16:39,798 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7737-1716772230050-0:1) is shutdown
+2024-05-27 10:16:39,799 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:10:28 KST 2024]; root of context hierarchy
+2024-05-27 10:16:39,805 [ActiveMQ ShutdownHook] INFO  /admin - Destroying Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:16:43,147 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory - Using class path resource [activemq.xml] from activemq.xml
+2024-05-27 10:16:43,168 [main] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:16:43 KST 2024]; root of context hierarchy
+2024-05-27 10:16:43,517 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Bean factory for org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: org.springframework.beans.factory.support.DefaultListableBeanFactory@388526fb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,logQuery,org.apache.activemq.xbean.XBeanBrokerService#0,securityLoginService,securityConstraint,adminSecurityConstraint,securityConstraintMapping,adminSecurityConstraintMapping,rewriteHandler,secHandlerCollection,securityHandler,contexts,jettyPort,Server,invokeConnectors,configureJetty,invokeStart]; root of factory hierarchy
+2024-05-27 10:16:43,570 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@784c3487]
+2024-05-27 10:16:43,571 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@681a8b4e]
+2024-05-27 10:16:43,717 [main] WARN  org.apache.activemq.broker.BrokerService - persistent="false", ignoring configured persistenceAdapter: KahaDBPersistenceAdapter[C:\Users\jimun\OneDrive\πŸ≈¡ »≠∏È\activemq\apache-activemq-5.14.3\bin\..\data\kahadb]
+2024-05-27 10:16:44,121 [main] INFO  /admin - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:16:44,136 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Initializing ActiveMQ WebConsole...
+2024-05-27 10:16:44,138 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Web console type: embedded
+2024-05-27 10:16:44,255 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole available at http://0.0.0.0:27272/
+2024-05-27 10:16:44,256 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ Jolokia REST API available at http://0.0.0.0:27272/api/jolokia/
+2024-05-27 10:16:44,257 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole initialized.
+2024-05-27 10:16:44,330 [main] INFO  /admin - Initializing Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:16:44,473 [main] INFO  /api - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:16:44,540 [main] DEBUG org.apache.activemq.web.MessageServletSupport - Defaulting to use topics: true
+2024-05-27 10:16:44,566 [main] INFO  /api - jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+2024-05-27 10:16:44,636 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@741f8dbe]
+2024-05-27 10:16:44,645 [main] INFO  org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+2024-05-27 10:16:44,782 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7916-1716772604651-0:1) is starting
+2024-05-27 10:16:44,797 [main] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:16:44,799 [main] INFO  org.apache.activemq.transport.TransportServerThreadSupport - Listening for connections at: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:16:44,799 [main] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt started
+2024-05-27 10:16:44,800 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7916-1716772604651-0:1) started
+2024-05-27 10:16:44,801 [main] INFO  org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+2024-05-27 10:16:44,808 [main] DEBUG org.apache.activemq.broker.region.AbstractRegion - localhost adding destination: topic://ActiveMQ.Advisory.MasterBroker
+2024-05-27 10:16:44,810 [main] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[localhost] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@21505815[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:16:47,409 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:16:47,410 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:16:47,413 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7916-1716772604651-3:1, address: tcp://0:0:0:0:0:0:0:1:7920, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7916-1716772604651-3:1, clientId = ID:DESKTOP-6OHN4HB-7916-1716772604651-3:1, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:16:47,416 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] WARN  org.apache.activemq.broker.TransportConnection - Failed to add Connection ID:DESKTOP-6OHN4HB-7916-1716772604651-3:1 due to java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:16:47,418 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] DEBUG org.apache.activemq.broker.TransportConnection.Service - Error occured while processing sync command: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7916-1716772604651-3:1, clientId = ID:DESKTOP-6OHN4HB-7916-1716772604651-3:1, clientIp = tcp://0:0:0:0:0:0:0:1:7920, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}, exception: java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+	at org.apache.activemq.security.JaasAuthenticationBroker.authenticate(JaasAuthenticationBroker.java:89)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.security.JaasAuthenticationBroker.addConnection(JaasAuthenticationBroker.java:68)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.MutableBrokerFilter.addConnection(MutableBrokerFilter.java:103)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.processAddConnection(TransportConnection.java:852)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.jmx.ManagedTransportConnection.processAddConnection(ManagedTransportConnection.java:77)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.command.ConnectionInfo.visit(ConnectionInfo.java:139)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.service(TransportConnection.java:336)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:200)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:45)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTInactivityMonitor.onCommand(MQTTInactivityMonitor.java:162)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.sendToActiveMQ(MQTTTransportFilter.java:106)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.sendToActiveMQ(MQTTProtocolConverter.java:181)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTConnect(MQTTProtocolConverter.java:310)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTCommand(MQTTProtocolConverter.java:205)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.onCommand(MQTTTransportFilter.java:94)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.14.3.jar:5.14.3]
+	at java.base/java.lang.Thread.run(Thread.java:842)[:]
+2024-05-27 10:16:47,420 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] WARN  org.apache.activemq.broker.TransportConnection.Service - Security Error occurred on connection to: tcp://0:0:0:0:0:0:0:1:7920, User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:16:47,422 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7920@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:16:49,419 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7920
+2024-05-27 10:16:49,419 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7920
+2024-05-27 10:16:49,420 [ActiveMQ BrokerService[localhost] Task-2] INFO  org.apache.activemq.broker.TransportConnection - Stopping tcp://0:0:0:0:0:0:0:1:7920 because Failed with SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:16:49,421 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7920@55555
+2024-05-27 10:16:49,427 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5ae74bde[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:16:49,429 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7920,localport=55555]
+2024-05-27 10:16:49,430 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5ae74bde[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:16:49,430 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7920
+2024-05-27 10:16:49,430 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7920
+2024-05-27 10:17:54,807 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7916-1716772604651-0:1) is shutting down
+2024-05-27 10:17:54,807 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.BrokerService - Caught exception, must be shutting down. This exception is ignored.
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)[:]
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)[:]
+	at org.apache.activemq.broker.BrokerService.removeShutdownHook(BrokerService.java:2508)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService.stop(BrokerService.java:809)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.xbean.XBeanBrokerService.stop(XBeanBrokerService.java:122)[activemq-spring-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService.containerShutdown(BrokerService.java:2531)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.BrokerService$7.run(BrokerService.java:2498)[activemq-broker-5.14.3.jar:5.14.3]
+2024-05-27 10:17:54,808 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt
+2024-05-27 10:17:54,819 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt stopped
+2024-05-27 10:17:54,821 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,destinationType=Topic,destinationName=ActiveMQ.Advisory.MasterBroker
+2024-05-27 10:17:54,821 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost
+2024-05-27 10:17:54,826 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,service=Health
+2024-05-27 10:17:54,826 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,service=Log4JConfiguration
+2024-05-27 10:17:54,829 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@21505815[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
+2024-05-27 10:17:54,830 [ActiveMQ ShutdownHook] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@73d44458[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:17:54,830 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7916-1716772604651-0:1) uptime 1 minute
+2024-05-27 10:17:54,830 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7916-1716772604651-0:1) is shutdown
+2024-05-27 10:17:54,831 [ActiveMQ ShutdownHook] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:16:43 KST 2024]; root of context hierarchy
+2024-05-27 10:17:54,836 [ActiveMQ ShutdownHook] INFO  /admin - Destroying Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:18:00,067 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory - Using class path resource [activemq.xml] from activemq.xml
+2024-05-27 10:18:00,086 [main] INFO  org.apache.activemq.xbean.XBeanBrokerFactory$1 - Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: startup date [Mon May 27 10:18:00 KST 2024]; root of context hierarchy
+2024-05-27 10:18:00,425 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Bean factory for org.apache.activemq.xbean.XBeanBrokerFactory$1@59fd97a8: org.springframework.beans.factory.support.DefaultListableBeanFactory@388526fb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,logQuery,org.apache.activemq.xbean.XBeanBrokerService#0,securityLoginService,securityConstraint,adminSecurityConstraint,securityConstraintMapping,adminSecurityConstraintMapping,rewriteHandler,secHandlerCollection,securityHandler,contexts,jettyPort,Server,invokeConnectors,configureJetty,invokeStart]; root of factory hierarchy
+2024-05-27 10:18:00,483 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@784c3487]
+2024-05-27 10:18:00,484 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@681a8b4e]
+2024-05-27 10:18:00,617 [main] WARN  org.apache.activemq.broker.BrokerService - persistent="false", ignoring configured persistenceAdapter: KahaDBPersistenceAdapter[C:\Users\jimun\OneDrive\πŸ≈¡ »≠∏È\activemq\apache-activemq-5.14.3\bin\..\data\kahadb]
+2024-05-27 10:18:00,974 [main] INFO  /admin - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:18:00,992 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Initializing ActiveMQ WebConsole...
+2024-05-27 10:18:00,994 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - Web console type: embedded
+2024-05-27 10:18:01,095 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole available at http://0.0.0.0:27272/
+2024-05-27 10:18:01,095 [main] INFO  org.apache.activemq.web.WebConsoleStarter - ActiveMQ Jolokia REST API available at http://0.0.0.0:27272/api/jolokia/
+2024-05-27 10:18:01,097 [main] DEBUG org.apache.activemq.web.WebConsoleStarter - ActiveMQ WebConsole initialized.
+2024-05-27 10:18:01,166 [main] INFO  /admin - Initializing Spring FrameworkServlet 'dispatcher'
+2024-05-27 10:18:01,307 [main] INFO  /api - No Spring WebApplicationInitializer types detected on classpath
+2024-05-27 10:18:01,373 [main] DEBUG org.apache.activemq.web.MessageServletSupport - Defaulting to use topics: true
+2024-05-27 10:18:01,398 [main] INFO  /api - jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+2024-05-27 10:18:01,466 [main] DEBUG org.apache.activemq.xbean.XBeanBrokerFactory$1 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@741f8dbe]
+2024-05-27 10:18:01,475 [main] INFO  org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+2024-05-27 10:18:01,602 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7934-1716772681484-0:1) is starting
+2024-05-27 10:18:01,619 [main] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:01,620 [main] INFO  org.apache.activemq.transport.TransportServerThreadSupport - Listening for connections at: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:01,621 [main] INFO  org.apache.activemq.broker.TransportConnector - Connector mqtt started
+2024-05-27 10:18:01,622 [main] INFO  org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (localhost, ID:DESKTOP-6OHN4HB-7934-1716772681484-0:1) started
+2024-05-27 10:18:01,623 [main] INFO  org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+2024-05-27 10:18:01,629 [main] DEBUG org.apache.activemq.broker.region.AbstractRegion - localhost adding destination: topic://ActiveMQ.Advisory.MasterBroker
+2024-05-27 10:18:01,632 [main] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[localhost] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@21505815[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:18:03,855 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:18:03,855 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:18:03,858 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:1, address: tcp://0:0:0:0:0:0:0:1:7937, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:1, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:1, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:18:03,931 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:03,932 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:03,933 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.region.AbstractRegion - localhost adding destination: topic://ActiveMQ.Advisory.Connection
+2024-05-27 10:18:03,946 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:18:03,946 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:18:03,952 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.region.AbstractRegion - localhost adding destination: topic://123
+2024-05-27 10:18:03,960 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:03,967 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:03,968 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.region.AbstractRegion - localhost adding destination: topic://ActiveMQ.Advisory.Topic
+2024-05-27 10:18:03,971 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:18:03,972 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:1
+2024-05-27 10:18:03,973 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_1,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_1_-1_1
+2024-05-27 10:18:03,976 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:03,977 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:03,978 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_1
+2024-05-27 10:18:03,979 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7937
+2024-05-27 10:18:03,980 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7937
+2024-05-27 10:18:03,980 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7937@55555
+2024-05-27 10:18:03,980 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7937
+2024-05-27 10:18:03,981 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b7a9990[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:18:03,982 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7937
+2024-05-27 10:18:03,985 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7937,localport=55555]
+2024-05-27 10:18:03,988 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7937@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b7a9990[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:18:05,371 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:18:05,372 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:18:05,373 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:2, address: tcp://0:0:0:0:0:0:0:1:7945, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:2, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:2, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:18:05,395 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:05,395 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:05,398 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:18:05,398 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:18:05,401 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:18:05,401 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:2
+2024-05-27 10:18:05,402 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_2,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_2_-1_1
+2024-05-27 10:18:05,403 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:05,404 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:05,407 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_2
+2024-05-27 10:18:05,413 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7945
+2024-05-27 10:18:05,413 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7945@55555
+2024-05-27 10:18:05,414 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7945
+2024-05-27 10:18:05,414 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f5f414e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:18:05,416 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7945
+2024-05-27 10:18:05,416 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7945
+2024-05-27 10:18:05,417 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7945,localport=55555]
+2024-05-27 10:18:05,417 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7945@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f5f414e[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:18:16,331 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:18:16,331 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:18:16,331 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:3, address: tcp://0:0:0:0:0:0:0:1:7959, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:3, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:3, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:18:16,347 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:16,347 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:16,348 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:18:16,348 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:18:16,349 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:18:16,350 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:3
+2024-05-27 10:18:16,351 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_3,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_3_-1_1
+2024-05-27 10:18:16,352 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:16,353 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:16,353 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_3
+2024-05-27 10:18:16,353 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7959
+2024-05-27 10:18:16,354 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7959@55555
+2024-05-27 10:18:16,354 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7959
+2024-05-27 10:18:16,354 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5bdf914[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:18:16,355 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7959
+2024-05-27 10:18:16,355 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7959
+2024-05-27 10:18:16,355 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7959,localport=55555]
+2024-05-27 10:18:16,356 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7959@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5bdf914[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:18:29,141 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:18:29,141 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:18:29,148 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:4, address: tcp://0:0:0:0:0:0:0:1:7967, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:4, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:4, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:18:29,187 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] WARN  org.apache.activemq.broker.TransportConnection - Failed to add Connection ID:DESKTOP-6OHN4HB-7934-1716772681484-3:4 due to java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:18:29,189 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] DEBUG org.apache.activemq.broker.TransportConnection.Service - Error occured while processing sync command: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:4, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:4, clientIp = tcp://0:0:0:0:0:0:0:1:7967, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}, exception: java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+	at org.apache.activemq.security.JaasAuthenticationBroker.authenticate(JaasAuthenticationBroker.java:89)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.security.JaasAuthenticationBroker.addConnection(JaasAuthenticationBroker.java:68)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.MutableBrokerFilter.addConnection(MutableBrokerFilter.java:103)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.processAddConnection(TransportConnection.java:852)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.jmx.ManagedTransportConnection.processAddConnection(ManagedTransportConnection.java:77)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.command.ConnectionInfo.visit(ConnectionInfo.java:139)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.service(TransportConnection.java:336)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:200)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:45)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTInactivityMonitor.onCommand(MQTTInactivityMonitor.java:162)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.sendToActiveMQ(MQTTTransportFilter.java:106)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.sendToActiveMQ(MQTTProtocolConverter.java:181)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTConnect(MQTTProtocolConverter.java:310)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTCommand(MQTTProtocolConverter.java:205)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.onCommand(MQTTTransportFilter.java:94)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.14.3.jar:5.14.3]
+	at java.base/java.lang.Thread.run(Thread.java:842)[:]
+2024-05-27 10:18:29,194 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] WARN  org.apache.activemq.broker.TransportConnection.Service - Security Error occurred on connection to: tcp://0:0:0:0:0:0:0:1:7967, User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:18:29,195 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7967@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:18:31,189 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7967
+2024-05-27 10:18:31,189 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7967
+2024-05-27 10:18:31,191 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7967@55555
+2024-05-27 10:18:31,191 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@653fda00[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:18:31,190 [ActiveMQ BrokerService[localhost] Task-1] INFO  org.apache.activemq.broker.TransportConnection - Stopping tcp://0:0:0:0:0:0:0:1:7967 because Failed with SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:18:31,197 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7967,localport=55555]
+2024-05-27 10:18:31,198 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@653fda00[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:18:31,198 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7967
+2024-05-27 10:18:31,198 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7967
+2024-05-27 10:18:33,489 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:18:33,489 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:18:33,491 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:5, address: tcp://0:0:0:0:0:0:0:1:7971, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:5, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:5, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:18:33,506 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:33,506 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:33,507 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:18:33,508 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:18:33,508 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:18:33,509 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:5
+2024-05-27 10:18:33,511 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_5,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_5_-1_1
+2024-05-27 10:18:33,517 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:33,517 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:18:33,518 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_5
+2024-05-27 10:18:33,519 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7971
+2024-05-27 10:18:33,519 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7971@55555
+2024-05-27 10:18:33,519 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7971
+2024-05-27 10:18:33,519 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@65b4a4e5[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:18:33,520 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7971
+2024-05-27 10:18:33,522 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7971
+2024-05-27 10:18:33,522 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7971,localport=55555]
+2024-05-27 10:18:33,523 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7971@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@65b4a4e5[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:19:01,876 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:19:01,876 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:19:01,877 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:6, address: tcp://0:0:0:0:0:0:0:1:7981, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:6, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:6, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:19:01,907 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] WARN  org.apache.activemq.broker.TransportConnection - Failed to add Connection ID:DESKTOP-6OHN4HB-7934-1716772681484-3:6 due to java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:19:01,909 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] DEBUG org.apache.activemq.broker.TransportConnection.Service - Error occured while processing sync command: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:6, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:6, clientIp = tcp://0:0:0:0:0:0:0:1:7981, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}, exception: java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+	at org.apache.activemq.security.JaasAuthenticationBroker.authenticate(JaasAuthenticationBroker.java:89)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.security.JaasAuthenticationBroker.addConnection(JaasAuthenticationBroker.java:68)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.MutableBrokerFilter.addConnection(MutableBrokerFilter.java:103)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.processAddConnection(TransportConnection.java:852)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.jmx.ManagedTransportConnection.processAddConnection(ManagedTransportConnection.java:77)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.command.ConnectionInfo.visit(ConnectionInfo.java:139)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.service(TransportConnection.java:336)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:200)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:45)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTInactivityMonitor.onCommand(MQTTInactivityMonitor.java:162)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.sendToActiveMQ(MQTTTransportFilter.java:106)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.sendToActiveMQ(MQTTProtocolConverter.java:181)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTConnect(MQTTProtocolConverter.java:310)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTCommand(MQTTProtocolConverter.java:205)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.onCommand(MQTTTransportFilter.java:94)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.14.3.jar:5.14.3]
+	at java.base/java.lang.Thread.run(Thread.java:842)[:]
+2024-05-27 10:19:01,909 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] WARN  org.apache.activemq.broker.TransportConnection.Service - Security Error occurred on connection to: tcp://0:0:0:0:0:0:0:1:7981, User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:19:01,910 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7981@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:19:03,038 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:19:03,038 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:19:03,040 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:7, address: tcp://0:0:0:0:0:0:0:1:7987, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:7, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:7, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:19:03,056 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:03,057 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:03,058 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:19:03,058 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:19:03,059 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:19:03,059 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:7
+2024-05-27 10:19:03,060 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_7,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_7_-1_1
+2024-05-27 10:19:03,061 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:03,061 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:03,062 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_7
+2024-05-27 10:19:03,062 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7987
+2024-05-27 10:19:03,062 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7987@55555
+2024-05-27 10:19:03,062 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7987
+2024-05-27 10:19:03,063 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@316f4b7e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:19:03,066 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7987
+2024-05-27 10:19:03,070 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7987
+2024-05-27 10:19:03,071 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7987,localport=55555]
+2024-05-27 10:19:03,071 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7987@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@316f4b7e[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:19:03,909 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7981
+2024-05-27 10:19:03,910 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7981
+2024-05-27 10:19:03,913 [ActiveMQ BrokerService[localhost] Task-2] INFO  org.apache.activemq.broker.TransportConnection - Stopping tcp://0:0:0:0:0:0:0:1:7981 because Failed with SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:19:03,919 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7981@55555
+2024-05-27 10:19:03,924 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@2860ca8c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:19:03,925 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7981,localport=55555]
+2024-05-27 10:19:03,926 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2860ca8c[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:19:03,926 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7981
+2024-05-27 10:19:03,927 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7981
+2024-05-27 10:19:04,271 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:19:04,272 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:19:04,273 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:8, address: tcp://0:0:0:0:0:0:0:1:7991, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:8, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:8, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:19:04,294 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:04,295 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:04,296 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:19:04,296 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:19:04,297 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:19:04,299 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:8
+2024-05-27 10:19:04,300 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_8,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_8_-1_1
+2024-05-27 10:19:04,306 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:04,307 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:04,308 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_8
+2024-05-27 10:19:04,308 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7991
+2024-05-27 10:19:04,310 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7991@55555
+2024-05-27 10:19:04,310 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7991
+2024-05-27 10:19:04,310 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@19fcc188[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:19:04,311 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7991
+2024-05-27 10:19:04,311 [ActiveMQ BrokerService[localhost] Task-2] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7991
+2024-05-27 10:19:04,312 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7991,localport=55555]
+2024-05-27 10:19:04,321 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7991@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@19fcc188[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:19:05,303 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:19:05,303 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:19:05,304 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:9, address: tcp://0:0:0:0:0:0:0:1:7995, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:9, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:9, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:19:05,353 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] WARN  org.apache.activemq.broker.TransportConnection - Failed to add Connection ID:DESKTOP-6OHN4HB-7934-1716772681484-3:9 due to java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:19:05,353 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] DEBUG org.apache.activemq.broker.TransportConnection.Service - Error occured while processing sync command: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:9, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:9, clientIp = tcp://0:0:0:0:0:0:0:1:7995, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}, exception: java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+	at org.apache.activemq.security.JaasAuthenticationBroker.authenticate(JaasAuthenticationBroker.java:89)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.security.JaasAuthenticationBroker.addConnection(JaasAuthenticationBroker.java:68)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.MutableBrokerFilter.addConnection(MutableBrokerFilter.java:103)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.processAddConnection(TransportConnection.java:852)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.jmx.ManagedTransportConnection.processAddConnection(ManagedTransportConnection.java:77)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.command.ConnectionInfo.visit(ConnectionInfo.java:139)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.service(TransportConnection.java:336)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:200)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:45)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTInactivityMonitor.onCommand(MQTTInactivityMonitor.java:162)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.sendToActiveMQ(MQTTTransportFilter.java:106)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.sendToActiveMQ(MQTTProtocolConverter.java:181)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTConnect(MQTTProtocolConverter.java:310)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTCommand(MQTTProtocolConverter.java:205)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.onCommand(MQTTTransportFilter.java:94)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.14.3.jar:5.14.3]
+	at java.base/java.lang.Thread.run(Thread.java:842)[:]
+2024-05-27 10:19:05,354 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] WARN  org.apache.activemq.broker.TransportConnection.Service - Security Error occurred on connection to: tcp://0:0:0:0:0:0:0:1:7995, User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:19:05,354 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7995@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:19:06,271 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:19:06,272 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:19:06,274 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:10, address: tcp://0:0:0:0:0:0:0:1:7999, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:10, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:10, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:19:06,295 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:06,295 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:06,296 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Using subscription strategy: mqtt-default-subscriptions
+2024-05-27 10:19:06,296 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:19:06,298 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  disconnecting
+2024-05-27 10:19:06,299 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.TransportConnection - remove connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:10
+2024-05-27 10:19:06,299 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,endpoint=dynamicProducer,clientId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_10,producerId=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_10_-1_1
+2024-05-27 10:19:06,299 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:06,300 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.TransportConnector - Publishing: mqtt://DESKTOP-6OHN4HB:55555 for broker transport URI: mqtt://DESKTOP-6OHN4HB:55555?maximumConnections=1000&wireFormat.maxFrameSize=104857600&wireFormat.maxInactivityDuration=9223372036854775807
+2024-05-27 10:19:06,301 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=clientId,connectionName=ID_DESKTOP-6OHN4HB-7934-1716772681484-3_10
+2024-05-27 10:19:06,307 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7999
+2024-05-27 10:19:06,308 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7999@55555
+2024-05-27 10:19:06,308 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7999
+2024-05-27 10:19:06,309 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@41f3832f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:19:06,309 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7999
+2024-05-27 10:19:06,310 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7999
+2024-05-27 10:19:06,311 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7999,localport=55555]
+2024-05-27 10:19:06,312 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:7999@55555] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@41f3832f[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:19:07,355 [ActiveMQ BrokerService[localhost] Task-3] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_7995
+2024-05-27 10:19:07,355 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:7995
+2024-05-27 10:19:07,355 [ActiveMQ BrokerService[localhost] Task-3] INFO  org.apache.activemq.broker.TransportConnection - Stopping tcp://0:0:0:0:0:0:0:1:7995 because Failed with SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:19:07,357 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:7995@55555
+2024-05-27 10:19:07,362 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@112e8a1c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:19:07,363 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=7995,localport=55555]
+2024-05-27 10:19:07,364 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@112e8a1c[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:19:07,364 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:7995
+2024-05-27 10:19:07,366 [ActiveMQ BrokerService[localhost] Task-1] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:7995
+2024-05-27 10:22:27,272 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  requests heart beat of 60000 ms
+2024-05-27 10:22:27,273 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  established heart beat of  60000 ms (60000 ms + 30000 ms grace period)
+2024-05-27 10:22:27,274 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] DEBUG org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:DESKTOP-6OHN4HB-7934-1716772681484-3:11, address: tcp://0:0:0:0:0:0:0:1:8036, info: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:11, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:11, clientIp = null, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+2024-05-27 10:22:27,322 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] WARN  org.apache.activemq.broker.TransportConnection - Failed to add Connection ID:DESKTOP-6OHN4HB-7934-1716772681484-3:11 due to java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:22:27,323 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] DEBUG org.apache.activemq.broker.TransportConnection.Service - Error occured while processing sync command: ConnectionInfo {commandId = 0, responseRequired = true, connectionId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:11, clientId = ID:DESKTOP-6OHN4HB-7934-1716772681484-3:11, clientIp = tcp://0:0:0:0:0:0:0:1:8036, userName = COMMAX-CM_RFR-10000100, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = false, clientMaster = true, faultTolerant = false, failoverReconnect = false}, exception: java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+java.lang.SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+	at org.apache.activemq.security.JaasAuthenticationBroker.authenticate(JaasAuthenticationBroker.java:89)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.security.JaasAuthenticationBroker.addConnection(JaasAuthenticationBroker.java:68)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.MutableBrokerFilter.addConnection(MutableBrokerFilter.java:103)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.processAddConnection(TransportConnection.java:852)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.jmx.ManagedTransportConnection.processAddConnection(ManagedTransportConnection.java:77)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.command.ConnectionInfo.visit(ConnectionInfo.java:139)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection.service(TransportConnection.java:336)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:200)[activemq-broker-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:45)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTInactivityMonitor.onCommand(MQTTInactivityMonitor.java:162)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.sendToActiveMQ(MQTTTransportFilter.java:106)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.sendToActiveMQ(MQTTProtocolConverter.java:181)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTConnect(MQTTProtocolConverter.java:310)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTProtocolConverter.onMQTTCommand(MQTTProtocolConverter.java:205)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.mqtt.MQTTTransportFilter.onCommand(MQTTTransportFilter.java:94)[activemq-mqtt-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)[activemq-client-5.14.3.jar:5.14.3]
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)[activemq-client-5.14.3.jar:5.14.3]
+	at java.base/java.lang.Thread.run(Thread.java:842)[:]
+2024-05-27 10:22:27,324 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] WARN  org.apache.activemq.broker.TransportConnection.Service - Security Error occurred on connection to: tcp://0:0:0:0:0:0:0:1:8036, User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:22:27,324 [ActiveMQ Transport: tcp:///0:0:0:0:0:0:0:1:8036@55555] DEBUG org.apache.activemq.transport.mqtt.MQTTProtocolConverter - MQTT Client  connected. (version: 4)
+2024-05-27 10:22:29,325 [ActiveMQ BrokerService[localhost] Task-4] DEBUG org.apache.activemq.broker.TransportConnection - Stopping connection: tcp://0:0:0:0:0:0:0:1:8036
+2024-05-27 10:22:29,325 [ActiveMQ BrokerService[localhost] Task-5] DEBUG org.apache.activemq.broker.jmx.ManagementContext - Unregistering MBean org.apache.activemq:type=Broker,brokerName=localhost,connector=clientConnectors,connectorName=mqtt,connectionViewType=remoteAddress,connectionName=tcp_//0_0_0_0_0_0_0_1_8036
+2024-05-27 10:22:29,327 [ActiveMQ BrokerService[localhost] Task-5] INFO  org.apache.activemq.broker.TransportConnection - Stopping tcp://0:0:0:0:0:0:0:1:8036 because Failed with SecurityException: User name [COMMAX-CM_RFR-10000100] or password is invalid.
+2024-05-27 10:22:29,328 [ActiveMQ BrokerService[localhost] Task-4] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Stopping transport tcp:///0:0:0:0:0:0:0:1:8036@55555
+2024-05-27 10:22:29,333 [ActiveMQ BrokerService[localhost] Task-4] DEBUG org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@52396833[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+2024-05-27 10:22:29,334 [ActiveMQ Task-1] DEBUG org.apache.activemq.transport.tcp.TcpTransport - Closed socket Socket[addr=/0:0:0:0:0:0:0:1,port=8036,localport=55555]
+2024-05-27 10:22:29,334 [ActiveMQ BrokerService[localhost] Task-4] DEBUG org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@52396833[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1]
+2024-05-27 10:22:29,335 [ActiveMQ BrokerService[localhost] Task-4] DEBUG org.apache.activemq.broker.TransportConnection - Stopped transport: tcp://0:0:0:0:0:0:0:1:8036
+2024-05-27 10:22:29,336 [ActiveMQ BrokerService[localhost] Task-4] DEBUG org.apache.activemq.broker.TransportConnection - Connection Stopped: tcp://0:0:0:0:0:0:0:1:8036
